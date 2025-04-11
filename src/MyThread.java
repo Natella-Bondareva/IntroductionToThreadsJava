@@ -18,11 +18,11 @@ public class MyThread extends Thread {
         while (!stopSignal.shouldStop()) {
             sum += step;
             count++;
-            try {
-                Thread.sleep(10); // Щоб не бігав занадто швидко
-            } catch (InterruptedException e) {
-                break;
-            }
+//            try {
+//                Thread.sleep(10); // Щоб не бігав занадто швидко
+//            } catch (InterruptedException e) {
+//                break;
+//            }
         }
 
         System.out.println("Потік " + id + ": сума = " + sum + ", кількість доданків = " + count);
